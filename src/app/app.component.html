@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="mat-elevation-z1">
+  <span id="logo" routerLink="users">Projetinho</span>
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="beforeMenu">Ações</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="/users">Lista de usuários</button>
+  <button mat-menu-item routerLink="/users/create">Criar usuário</button>
+</mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
